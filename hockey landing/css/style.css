@@ -190,7 +190,7 @@ h1 {
 }
 
 .best-regular {
-	background: -webkit-linear-gradient(#be1d0b, #b48783);
+	background: -webkit-linear-gradient(rgb(161, 64, 226), rgb(136, 194, 136));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-size: 18px !important;

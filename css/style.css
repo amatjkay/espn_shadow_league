@@ -151,6 +151,14 @@ h1 {
 	width: 19px;
 }
 
+
+.left.vietnam::before {
+	content: url(../img/flags/vietnam.svg);
+	margin-right: inherit;
+	height: 14px;
+	width: 19px;
+}
+
 .data-items .right {
 	display: inline-flex;
 	height: 100%;

@@ -248,10 +248,17 @@ h1 {
 	margin-top: 200px;
 }
 
+.footer a {
+	text-decoration: none;
+	color: #fff;
+}
+
 .copyright {
 	color: #fff;
 	font-size: 14px;
+	text-decoration: none;
 }
+
 
 
 /* Responsive */

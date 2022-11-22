@@ -64,9 +64,10 @@ h1 {
   line-height: 89px;
 }
 .main-table {
+  padding: 0 10px;
   background: linear-gradient(70deg, rgba(255, 255, 255, 0.3), transparent);
   margin-top: 30px;
-  width: fit-content;
+  min-width: 550px;
   min-height: fit-content;
   font-weight: bold;
   border-radius: 20px;
@@ -79,94 +80,78 @@ h1 {
 .main-table img .titles {
   font-size: 16px;
 }
-
-#data_titles {
-  font-style: normal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main-table__titles {
   background: -webkit-linear-gradient(#ff0000, #ffc2c2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.data-items {
-  justify-content: space-between;
+.main-table__items {
+  margin: 0 -10px;
   border: 3px solid skyblue;
   font-size: 14px;
   border-radius: inherit;
 }
-
-.left {
-  margin: 5px;
-  min-width: 300px;
-}
-
-.left.rus::before {
-  content: url(../img/flags/rus.png);
-  margin-right: inherit;
-  height: 14px;
-  width: 19px;
-}
-
-.left.bel::before {
-  content: url(../img/flags/bel.png);
-  margin-right: inherit;
-  height: 14px;
-  width: 19px;
-}
-
-.left.kz::before {
-  content: url(../img/flags/kz.png);
-  margin-right: inherit;
-  height: 14px;
-  width: 19px;
-}
-
-.left.ua::before {
-  content: url(../img/flags/ua.png);
-  margin-right: inherit;
-  height: 14px;
-  width: 19px;
-}
-
-.left.pol::before {
-  content: url(../img/flags/pol.png);
-  margin-right: inherit;
-  height: 14px;
-  width: 19px;
-}
-
-.left.vietnam::before {
-  content: url(../img/flags/vietnam.svg);
-  margin-right: inherit;
-  height: 14px;
-  width: 19px;
-}
-
-.left.mexico::before {
-  content: url(../img/flags/mexico.png);
-  margin-right: inherit;
-  height: 14px;
-  width: 19px;
-}
-
-.right {
-  margin: 1px;
-}
-
-.data-row {
+.main-table__row {
   min-height: 30px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 5px;
   border-bottom: 2px solid skyblue;
   border-image: linear-gradient(to left top, #0073ff, skyblue, #00a6ff);
   border-image-slice: 1;
 }
-
-.data-row:last-child {
+.main-table__row:last-child {
   border: none;
+}
+.main-table__row_right {
+  margin: 1px;
+}
+.main-table__row_left {
+  margin: 5px;
+  min-width: 300px;
+}
+.main-table__row_left.rus::before {
+  content: url(../img/flags/rus.png);
+  margin-right: inherit;
+  height: 14px;
+  width: 19px;
+}
+.main-table__row_left.bel::before {
+  content: url(../img/flags/bel.png);
+  margin-right: inherit;
+  height: 14px;
+  width: 19px;
+}
+.main-table__row_left.kz::before {
+  content: url(../img/flags/kz.png);
+  margin-right: inherit;
+  height: 14px;
+  width: 19px;
+}
+.main-table__row_left.ua::before {
+  content: url(../img/flags/ua.png);
+  margin-right: inherit;
+  height: 14px;
+  width: 19px;
+}
+.main-table__row_left.pol::before {
+  content: url(../img/flags/pol.png);
+  margin-right: inherit;
+  height: 14px;
+  width: 19px;
+}
+.main-table__row_left.vietnam::before {
+  content: url(../img/flags/vietnam.svg);
+  margin-right: inherit;
+  height: 14px;
+  width: 19px;
+}
+.main-table__row_left.mexico::before {
+  content: url(../img/flags/mexico.png);
+  margin-right: inherit;
+  height: 14px;
+  width: 19px;
 }
 
 .top1 {

@@ -4,7 +4,6 @@
 	box-sizing: border-box;
 }
 
-
 html {
 	overflow-x: hidden;
 }
@@ -14,11 +13,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-image: url('../img/background2.jpg');
+	background-image: url("../img/background2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: #CFE1EB;
-	font-family: 'Ubuntu', sans-serif;
+	background-color: #cfe1eb;
+	font-family: "Ubuntu", sans-serif;
 	cursor: default;
 }
 
@@ -52,7 +51,6 @@ h1 {
 	right: 15px;
 }
 
-
 .main-content {
 	display: flex;
 	align-items: center;
@@ -82,7 +80,6 @@ h1 {
 	height: 30px;
 	margin: 2px;
 	cursor: help;
-
 }
 
 .titles {
@@ -106,7 +103,6 @@ h1 {
 	font-size: 14px;
 	border-radius: inherit;
 }
-
 
 .left {
 	margin: 5px;
@@ -148,7 +144,6 @@ h1 {
 	width: 19px;
 }
 
-
 .left.vietnam::before {
 	content: url(../img/flags/vietnam.svg);
 	margin-right: inherit;
@@ -167,7 +162,6 @@ h1 {
 	margin: 1px;
 }
 
-
 .data-row {
 	min-height: 30px;
 	display: flex;
@@ -176,16 +170,15 @@ h1 {
 	border-bottom: 2px solid skyblue;
 	border-image: linear-gradient(to left top, #0073ff, skyblue, #00a6ff);
 	border-image-slice: 1;
-	color: rgba(0 0 0 .8);
+	color: rgba(0 0 0 0.8);
 }
 
 .data-row:last-child {
 	border: none;
 }
 
-
 .top1 {
-	background: -webkit-linear-gradient(#AE8419, #FFCE6B);
+	background: -webkit-linear-gradient(#ae8419, #ffce6b);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-size: 18px !important;
@@ -199,7 +192,7 @@ h1 {
 }
 
 .top3 {
-	background: -webkit-linear-gradient(#9c5221, #FCB48C);
+	background: -webkit-linear-gradient(#9c5221, #fcb48c);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-size: 18px !important;
@@ -215,7 +208,6 @@ h1 {
 .clap {
 	height: 25px !important;
 }
-
 
 /* footer */
 .footer {
@@ -240,8 +232,6 @@ h1 {
 	font-size: 14px;
 	text-decoration: none;
 }
-
-
 
 /* Responsive */
 @media (max-width: 760px) {
@@ -331,7 +321,7 @@ h1 {
 	.menu-button::before {
 		z-index: 10;
 		display: block;
-		content: '';
+		content: "";
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -345,7 +335,7 @@ h1 {
 	.menu-button::after {
 		z-index: 10;
 		display: block;
-		content: '';
+		content: "";
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -363,7 +353,7 @@ h1 {
 	.menu-button-active::before {
 		transform: rotate(45deg);
 		display: block;
-		content: '';
+		content: "";
 		position: absolute;
 		background-color: #fff;
 		margin-top: 0;
@@ -373,7 +363,7 @@ h1 {
 	.menu-button-active::after {
 		transform: rotate(-45deg);
 		display: block;
-		content: '';
+		content: "";
 		position: absolute;
 		background-color: #fff;
 		margin-top: 0;
@@ -404,5 +394,4 @@ h1 {
 	.series {
 		width: 50%;
 	}
-
 }

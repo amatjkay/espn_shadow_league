@@ -2,6 +2,11 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 html {
@@ -16,7 +21,7 @@ body {
   background-image: url("../img/background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  // background-color: #cfe1eb;
+  background-color: #cfe1eb;
   font-family: "Ubuntu", sans-serif;
   cursor: default;
 }
@@ -44,8 +49,15 @@ h1 {
     margin: 10px;
   }
   &-social {
-    position: absolute;
-    right: 15px;
+    position: relative;
+    margin-left: auto;
+    &__link-tg::before {
+      content: "Напиcать автору";
+      position: absolute;
+      display: contents;
+      color: lightskyblue;
+      font-size: 12px;
+    }
   }
 }
 
@@ -75,9 +87,6 @@ h1 {
       height: 30px;
       margin: 2px;
       cursor: help;
-      .titles {
-        font-size: 16px;
-      }
     }
     &__titles {
       background: -webkit-linear-gradient(#ff0000, #ffc2c2);
@@ -159,6 +168,10 @@ h1 {
     }
   }
 }
+.titles {
+  font-size: 16px;
+  padding: 5px 10px;
+}
 
 .top1 {
   background: -webkit-linear-gradient(#ae8419, #ffce6b);
@@ -201,6 +214,7 @@ h1 {
   width: 100%;
   bottom: 0px;
   background: #092350;
+  color: #fff;
   padding: 5px 0;
   margin-top: 300px;
 }

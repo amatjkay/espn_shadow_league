@@ -22,6 +22,7 @@ body {
 	font-style: normal;
 	font-weight: normal;
 	cursor: default;
+	color: rgba(0, 0, 0, 0.8);
 }
 
 h1 {
@@ -90,7 +91,6 @@ h1 {
 	min-height: fit-content;
 	font-weight: bold;
 	font-style: italic;
-	color: skyblue;
 }
 
 .main-table img {
@@ -154,6 +154,13 @@ h1 {
 
 .left.vietnam::before {
 	content: url(../img/flags/vietnam.svg);
+	margin-right: inherit;
+	height: 14px;
+	width: 19px;
+}
+
+.left.mexico::before {
+	content: url(../img/flags/mexico.png);
 	margin-right: inherit;
 	height: 14px;
 	width: 19px;

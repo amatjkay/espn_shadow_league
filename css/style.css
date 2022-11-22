@@ -19,10 +19,7 @@ body {
 	background-size: cover;
 	background-color: #CFE1EB;
 	font-family: 'Ubuntu', sans-serif;
-	font-style: normal;
-	font-weight: normal;
 	cursor: default;
-	color: rgba(0, 0, 0, 0.8);
 }
 
 h1 {
@@ -47,32 +44,14 @@ h1 {
 
 .header img {
 	max-height: 60px;
-	margin: 5px;
+	margin: 10px;
 }
 
-.header .social {
+.header-social {
 	position: absolute;
 	right: 15px;
 }
 
-
-.menu-list {
-	margin-right: auto;
-	margin-left: 67px;
-}
-
-.menu-link {
-	font-size: 14px;
-	line-height: 16px;
-	color: #FFFFFF;
-	text-decoration: none;
-	margin-right: 24px;
-}
-
-.social-link {
-	margin-left: 20px;
-	text-decoration: none;
-}
 
 .main-content {
 	display: flex;
@@ -91,10 +70,12 @@ h1 {
 }
 
 .main-table {
+	background: linear-gradient(45deg, #ffffff42, transparent);
 	margin-top: 30px;
 	min-width: 600px;
 	min-height: fit-content;
 	font-weight: bold;
+	border-radius: 20px;
 }
 
 .main-table img {
@@ -123,7 +104,7 @@ h1 {
 	justify-content: space-between;
 	border: 3px solid skyblue;
 	font-size: 14px;
-	border-radius: 20px;
+	border-radius: inherit;
 }
 
 
@@ -195,6 +176,7 @@ h1 {
 	border-bottom: 2px solid skyblue;
 	border-image: linear-gradient(to left top, #0073ff, skyblue, #00a6ff);
 	border-image-slice: 1;
+	color: rgba(0 0 0 .8);
 }
 
 .data-row:last-child {
@@ -203,28 +185,28 @@ h1 {
 
 
 .top1 {
-	background: -webkit-linear-gradient(#FFCE6B, #AE8419);
+	background: -webkit-linear-gradient(#AE8419, #FFCE6B);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-size: 18px !important;
 }
 
 .top2 {
-	background: -webkit-linear-gradient(#fff, #bababa);
+	background: -webkit-linear-gradient(#bababa, #fff);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-size: 18px !important;
 }
 
 .top3 {
-	background: -webkit-linear-gradient(#FCB48C, #9c5221);
+	background: -webkit-linear-gradient(#9c5221, #FCB48C);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-size: 18px !important;
 }
 
 .best-regular {
-	background: -webkit-linear-gradient(rgb(221 182 248), rgb(137 7 224));
+	background: -webkit-linear-gradient(rgb(137 7 224), rgb(221 182 248));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-size: 18px !important;
@@ -245,7 +227,7 @@ h1 {
 	bottom: 0px;
 	background: #092350;
 	padding: 5px 0;
-	margin-top: 200px;
+	margin-top: 300px;
 }
 
 .footer a {

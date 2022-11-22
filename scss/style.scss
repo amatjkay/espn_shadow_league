@@ -16,7 +16,7 @@ body {
 	background-image: url("../img/background2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: #cfe1eb;
+	// background-color: #cfe1eb;
 	font-family: "Ubuntu", sans-serif;
 	cursor: default;
 }
@@ -170,7 +170,6 @@ h1 {
 	border-bottom: 2px solid skyblue;
 	border-image: linear-gradient(to left top, #0073ff, skyblue, #00a6ff);
 	border-image-slice: 1;
-	color: rgba(0 0 0 0.8);
 }
 
 .data-row:last-child {

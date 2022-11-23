@@ -46,6 +46,43 @@ h1 {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+.header {
+  padding-top: 20px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  img {
+    max-height: 60px;
+    margin: 10px;
+  }
+  &-social {
+    position: relative;
+    margin-left: auto;
+
+    &__link-tg::before {
+      content: "Напиcать автору";
+      position: absolute;
+      display: contents;
+      color: lightskyblue;
+      font-size: 12px;
+    }
+  }
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.titles {
+  background: -webkit-linear-gradient(#ff0000, #ffc2c2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none !important;
+}
 .tabs {
   padding: 0 0 50px 0;
   // .tabs__items
@@ -96,9 +133,13 @@ h1 {
   }
 
   &__block:nth-child(1) {
-    background-color: #9d2929;
+    background-color: transparent;
+    border: 1px #0073ff dotted;
+    border-radius: 20px;
     &::before {
-      background-color: #9d2929;
+      background-color: transparent;
+      border: 1px #0073ff dotted;
+      border-radius: 20px;
       left: 0%;
     }
   }
@@ -117,50 +158,12 @@ h1 {
     }
   }
 }
-.text {
-  font-size: 18px;
-  line-height: 24px;
-  color: #fff;
-  margin: 50px;
-}
-
-.header {
-  padding-top: 20px;
-  min-height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  img {
-    max-height: 60px;
-    margin: 10px;
-  }
-  &-social {
-    position: relative;
-    margin-left: auto;
-
-    &__link-tg::before {
-      content: "Напиcать автору";
-      position: absolute;
-      display: contents;
-      color: lightskyblue;
-      font-size: 12px;
-    }
-  }
-}
-
-.nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.titles {
-  background: -webkit-linear-gradient(#ff0000, #ffc2c2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border: none !important;
-}
-
+// .text {
+//   font-size: 18px;
+//   line-height: 24px;
+//   color: #fff;
+//   margin: 50px;
+// }
 .main {
   display: flex;
   align-items: center;
@@ -169,7 +172,6 @@ h1 {
   &-title {
     display: block;
     text-align: center;
-    margin-top: 100px;
     font-weight: 500;
     font-size: 60px;
     line-height: 89px;

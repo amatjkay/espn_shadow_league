@@ -19,6 +19,7 @@ html {
 }
 
 body {
+	position: relative;
 	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
@@ -37,11 +38,7 @@ h2 {
 	-webkit-text-fill-color: transparent;
 }
 
-.main-table,
-.main-draft_1,
-.main-draft_2 {
-	min-height: 100vh;
-}
+
 
 .container {
 	width: 95%;
@@ -50,11 +47,19 @@ h2 {
 
 
 .header {
-	padding-top: 20px;
+	position: fixed;
+	width: 100%;
 	min-height: 60px;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
+	background: linear-gradient(180deg, rgb(255 255 255 / 30%), transparent);
+
+	&-partners {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
 	img {
 		max-height: 60px;
@@ -63,34 +68,19 @@ h2 {
 
 	&-tabs {
 		display: flex;
-		justify-content: space-around;
-		align-items: center;
+		justify-content: space-between;
 
 		&__title {
-			padding: 0 10px;
-		}
-	}
-
-	&-social {
-		position: relative;
-
-		&__link-tg::before {
-			content: "Напиcать автору";
-			position: absolute;
-			display: contents;
-			color: lightskyblue;
-			font-size: 12px;
+			padding: 0 30px;
+			background: -webkit-linear-gradient(red, #ffd1d1);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 14px;
+			font-weight: bold;
 		}
 	}
 }
 
-
-.titles {
-	background: -webkit-linear-gradient(red, #ffd1d1);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	padding: 5px;
-}
 
 .main {
 	display: flex;
@@ -106,22 +96,25 @@ h2 {
 		line-height: 89px;
 	}
 
-	&-tabs {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-
-		&__title {
-			background-color: #fff;
-		}
+	.titles {
+		background: -webkit-linear-gradient(red, #ffd1d1);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		padding: 5px;
 	}
 
-	&-table {
-		padding: 0 10px;
-		margin-top: 30px;
-		min-width: 550px;
 
+	&-table {
+		padding: 100px 10px;
+		min-width: 550px;
 		border-radius: 20px;
+		min-height: 100vh;
+
+
+
+		&-draft {
+			min-height: 100vh;
+		}
 
 		img {
 			height: 30px;

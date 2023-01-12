@@ -15,6 +15,7 @@ a {
 
 html {
 	overflow-x: hidden;
+	color: #000;
 }
 
 body {
@@ -36,6 +37,12 @@ h2 {
 	-webkit-text-fill-color: transparent;
 }
 
+.main-table,
+.main-draft_1,
+.main-draft_2 {
+	min-height: 100vh;
+}
+
 .container {
 	width: 95%;
 	margin: auto;
@@ -47,16 +54,25 @@ h2 {
 	min-height: 60px;
 	display: flex;
 	align-items: center;
-	justify-content: start;
+	justify-content: space-around;
 
 	img {
 		max-height: 60px;
 		margin: 10px;
 	}
 
+	&-tabs {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		&__title {
+			padding: 0 10px;
+		}
+	}
+
 	&-social {
 		position: relative;
-		margin-left: auto;
 
 		&__link-tg::before {
 			content: "Напиcать автору";
@@ -69,72 +85,6 @@ h2 {
 }
 
 
-
-// &__item {
-// 	flex: 1 0 33.333%;
-// 	height: 50px;
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	text-transform: uppercase;
-// 	text-decoration: none;
-
-// 	& span {
-// 		position: relative;
-// 		z-index: 2;
-// 	}
-// }
-
-
-// &__block {
-// 	position: relative;
-// 	display: none;
-// 	padding: 20px;
-// 	font-size: 18px;
-// 	line-height: 24px;
-// }
-
-// &__block::before {
-// 	content: "";
-// 	height: 50px;
-// 	width: 33.333%;
-// 	position: absolute;
-// 	top: -50px;
-// }
-
-// &__block:target {
-// 	display: block;
-// }
-
-// &__block:nth-child(1) {
-// 	background-color: transparent;
-// 	border: 1px #0073ff dotted;
-// 	border-radius: 20px;
-
-// 	&::before {
-// 		background-color: transparent;
-// 		border: 1px #0073ff dotted;
-// 		border-radius: 20px;
-// 		left: 0%;
-// 	}
-// }
-
-// &__block:nth-child(2) {
-// 	background: #00a6ff;
-
-// 	&::before {
-// 		background-color: #00a6ff;
-// 		left: 33.333%;
-// 	}
-// }
-
-// &__block:nth-child(3) {
-// 	background: #fcb48c;
-
-// 	&::before {
-// 		background-color: #fcb48c;
-// 		right: 0%;
-// 	}
 .titles {
 	background: -webkit-linear-gradient(red, #ffd1d1);
 	-webkit-background-clip: text;
@@ -162,7 +112,6 @@ h2 {
 		justify-content: space-between;
 
 		&__title {
-			// height: 50px;
 			background-color: #fff;
 		}
 	}
@@ -171,8 +120,7 @@ h2 {
 		padding: 0 10px;
 		margin-top: 30px;
 		min-width: 550px;
-		min-height: fit-content;
-		background: linear-gradient(70deg, rgb(255 255 255 / 30%), transparent);
+
 		border-radius: 20px;
 
 		img {
@@ -186,8 +134,7 @@ h2 {
 			border: 3px solid skyblue;
 			font-size: 14px;
 			border-radius: inherit;
-
-
+			background: linear-gradient(70deg, rgb(255 255 255 / 30%), transparent);
 			font-weight: bold;
 		}
 

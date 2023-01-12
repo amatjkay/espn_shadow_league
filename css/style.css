@@ -16,6 +16,7 @@ a {
 
 html {
   overflow-x: hidden;
+  color: #000;
 }
 
 body {
@@ -37,6 +38,12 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
+.main-table,
+.main-draft_1,
+.main-draft_2 {
+  min-height: 100vh;
+}
+
 .container {
   width: 95%;
   margin: auto;
@@ -47,15 +54,22 @@ h2 {
   min-height: 60px;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: space-around;
 }
 .header img {
   max-height: 60px;
   margin: 10px;
 }
+.header-tabs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-tabs__title {
+  padding: 0 10px;
+}
 .header-social {
   position: relative;
-  margin-left: auto;
 }
 .header-social__link-tg::before {
   content: "Напиcать автору";
@@ -97,8 +111,6 @@ h2 {
   padding: 0 10px;
   margin-top: 30px;
   min-width: 550px;
-  min-height: fit-content;
-  background: linear-gradient(70deg, rgba(255, 255, 255, 0.3), transparent);
   border-radius: 20px;
 }
 .main-table img {
@@ -111,6 +123,7 @@ h2 {
   border: 3px solid skyblue;
   font-size: 14px;
   border-radius: inherit;
+  background: linear-gradient(70deg, rgba(255, 255, 255, 0.3), transparent);
   font-weight: bold;
 }
 .main-table__row {

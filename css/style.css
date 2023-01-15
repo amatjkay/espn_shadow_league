@@ -76,27 +76,29 @@ h2 {
 }
 
 .header {
+  position: relative;
   margin-bottom: 50px;
-  padding: 0 10px;
+  padding: 0 70px 0 0;
   width: 100%;
   min-height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), transparent);
 }
-.header-partners {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header-social {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .header img {
   max-height: 60px;
   margin: 10px;
 }
 .header-tabs {
+  margin-left: 5%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header-tabs__title {
   padding: 0 30px;

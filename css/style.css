@@ -116,9 +116,6 @@ h2 {
   flex-direction: column;
 }
 .main-title {
-  display: block;
-  text-align: center;
-  font-weight: 500;
   font-size: 60px;
   line-height: 89px;
 }
@@ -142,7 +139,7 @@ h2 {
   border: 3px solid skyblue;
   font-size: 14px;
   border-radius: inherit;
-  background: linear-gradient(70deg, rgba(255, 255, 255, 0.4), transparent);
+  background: linear-gradient(70deg, rgba(255, 255, 255, 0.5), transparent);
   font-weight: bold;
 }
 .main-table__row {

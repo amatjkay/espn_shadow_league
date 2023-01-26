@@ -9,7 +9,7 @@
 
 }
 
-@mixin font_size_for_top {
+@mixin font_size_for_top_players {
 	font-size: 18px !important;
 }
 
@@ -140,6 +140,7 @@ ul {
 		&__title {
 			padding: 0 30px;
 			@include red_text;
+			@include font_size_for_top_players;
 		}
 	}
 }
@@ -243,25 +244,25 @@ ul {
 
 .top1 {
 	background: -webkit-linear-gradient(#ae8419, #ffce6b);
-	@include font_size_for_top;
+	@include font_size_for_top_players;
 	@include text_transparent;
 }
 
 .top2 {
 	background: -webkit-linear-gradient(#bababa, #fff);
-	@include font_size_for_top;
+	@include font_size_for_top_players;
 	@include text_transparent;
 }
 
 .top3 {
 	background: -webkit-linear-gradient(#9c5221, #fcb48c);
-	@include font_size_for_top;
+	@include font_size_for_top_players;
 	@include text_transparent;
 }
 
 .best-regular {
 	background: -webkit-linear-gradient(rgb(137 7 224), rgb(221 182 248));
-	@include font_size_for_top;
+	@include font_size_for_top_players;
 	@include text_transparent;
 }
 

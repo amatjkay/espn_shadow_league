@@ -1,3 +1,24 @@
+@mixin text_transparent {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin red_text {
+	background: -webkit-linear-gradient(red, #ffd1d1);
+	@include text_transparent;
+
+}
+
+@mixin font_size_for_top {
+	font-size: 18px !important;
+}
+
+@mixin addition_for_flag {
+	margin-right: inherit;
+	height: 14px;
+	width: 19px;
+}
+
 *,
 *::before,
 *::after {
@@ -23,35 +44,42 @@
 	width: 100%;
 	scrollbar-width: var(--scrollbarWidth);
 	scrollbar-color: var(--scrollbarThumbColor) var(--scrollbarBgColor);
-}
 
-.container::-webkit-scrollbar {
-	width: var(--scrollbarWidth);
-}
+	&::-webkit-scrollbar {
+		width: var(--scrollbarWidth);
+	}
 
-.container::-webkit-scrollbar-track {
-	background: var(--scrollbarBgColor);
-	border-radius: var(--scrollbarBorderRadius);
-}
+	&::-webkit-scrollbar-track {
+		background: var(--scrollbarBgColor);
+		border-radius: var(--scrollbarBorderRadius);
+	}
 
-.container::-webkit-scrollbar-thumb {
-	background-color: var(--scrollbarThumbColor);
-	border-radius: var(--scrollbarBorderRadius);
-	border: var(--scrollbarBorder);
-	background-image: linear-gradient(-90deg,
-			var(--scrollbarThumbColor) 0%,
-			var(--scrollbarThumbColorSecond) 95%);
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--scrollbarThumbColor);
+		border-radius: var(--scrollbarBorderRadius);
+		border: var(--scrollbarBorder);
+		background-image: linear-gradient(-90deg,
+				var(--scrollbarThumbColor) 0%,
+				var(--scrollbarThumbColorSecond) 95%);
+	}
 }
 
 a {
 	text-decoration: none;
 	outline: none;
-}
 
-a:focus {
-	outline: none;
-}
+	&:hover {
+		background: -webkit-linear-gradient(#ffd1d1, red, );
+		@include text_transparent;
+		transition: 0.5 all;
+	}
 
+	&:focus {
+		background: -webkit-linear-gradient(#ffd1d1, red, );
+		@include text_transparent;
+		outline: none;
+	}
+}
 
 html {
 	overflow-x: hidden;
@@ -74,8 +102,7 @@ body {
 
 h2 {
 	background: -webkit-linear-gradient(#00a6ff, #ffc2c2);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	@include text_transparent
 }
 
 .header {
@@ -107,15 +134,10 @@ h2 {
 
 		&__title {
 			padding: 0 30px;
-			background: -webkit-linear-gradient(red, #ffd1d1);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			font-size: 14px;
-			font-weight: bold;
+			@include red_text;
 		}
 	}
 }
-
 
 .main {
 	display: flex;
@@ -128,13 +150,6 @@ h2 {
 		line-height: 89px;
 	}
 
-	.titles {
-		background: -webkit-linear-gradient(red, #ffd1d1);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		padding: 5px;
-	}
-
 	&-table {
 		border-radius: 20px;
 		margin-bottom: 50px;
@@ -143,6 +158,11 @@ h2 {
 			height: 30px;
 			margin: 2px;
 			cursor: help;
+		}
+
+		&__titles {
+			@include red_text;
+			font-weight: bold;
 		}
 
 		&__items {
@@ -179,51 +199,37 @@ h2 {
 
 				&.rus::before {
 					content: url(../img/flags/rus.png);
-					margin-right: inherit;
-					height: 14px;
-					width: 19px;
+					@include addition_for_flag;
 				}
 
 				&.bel::before {
 					content: url(../img/flags/bel.png);
-					margin-right: inherit;
-					height: 14px;
-					width: 19px;
+					@include addition_for_flag;
 				}
 
 				&.kz::before {
 					content: url(../img/flags/kz.png);
-					margin-right: inherit;
-					height: 14px;
-					width: 19px;
+					@include addition_for_flag;
 				}
 
 				&.ua::before {
 					content: url(../img/flags/ua.png);
-					margin-right: inherit;
-					height: 14px;
-					width: 19px;
+					@include addition_for_flag;
 				}
 
 				&.pol::before {
 					content: url(../img/flags/pol.png);
-					margin-right: inherit;
-					height: 14px;
-					width: 19px;
+					@include addition_for_flag;
 				}
 
 				&.vietnam::before {
 					content: url(../img/flags/vietnam.svg);
-					margin-right: inherit;
-					height: 14px;
-					width: 19px;
+					@include addition_for_flag;
 				}
 
 				&.mexico::before {
 					content: url(../img/flags/mexico.png);
-					margin-right: inherit;
-					height: 14px;
-					width: 19px;
+					@include addition_for_flag;
 				}
 			}
 		}
@@ -233,30 +239,26 @@ h2 {
 
 .top1 {
 	background: -webkit-linear-gradient(#ae8419, #ffce6b);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-size: 18px !important;
+	@include font_size_for_top;
+	@include text_transparent;
 }
 
 .top2 {
 	background: -webkit-linear-gradient(#bababa, #fff);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-size: 18px !important;
+	@include font_size_for_top;
+	@include text_transparent;
 }
 
 .top3 {
 	background: -webkit-linear-gradient(#9c5221, #fcb48c);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-size: 18px !important;
+	@include font_size_for_top;
+	@include text_transparent;
 }
 
 .best-regular {
 	background: -webkit-linear-gradient(rgb(137 7 224), rgb(221 182 248));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-size: 18px !important;
+	@include font_size_for_top;
+	@include text_transparent;
 }
 
 .clap {
@@ -287,6 +289,3 @@ h2 {
 	font-size: 14px;
 	text-decoration: none;
 }
-
-/* Responsive */
-// @media (max-width: 760px) {}

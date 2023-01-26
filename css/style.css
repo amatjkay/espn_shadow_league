@@ -24,16 +24,13 @@
   scrollbar-width: var(--scrollbarWidth);
   scrollbar-color: var(--scrollbarThumbColor) var(--scrollbarBgColor);
 }
-
 .container::-webkit-scrollbar {
   width: var(--scrollbarWidth);
 }
-
 .container::-webkit-scrollbar-track {
   background: var(--scrollbarBgColor);
   border-radius: var(--scrollbarBorderRadius);
 }
-
 .container::-webkit-scrollbar-thumb {
   background-color: var(--scrollbarThumbColor);
   border-radius: var(--scrollbarBorderRadius);
@@ -45,8 +42,16 @@ a {
   text-decoration: none;
   outline: none;
 }
-
+a:hover {
+  background: -webkit-linear-gradient(#ffd1d1, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5 all;
+}
 a:focus {
+  background: -webkit-linear-gradient(#ffd1d1, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   outline: none;
 }
 
@@ -105,8 +110,6 @@ h2 {
   background: -webkit-linear-gradient(red, #ffd1d1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 14px;
-  font-weight: bold;
 }
 
 .main {
@@ -119,12 +122,6 @@ h2 {
   font-size: 60px;
   line-height: 89px;
 }
-.main .titles {
-  background: -webkit-linear-gradient(red, #ffd1d1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 5px;
-}
 .main-table {
   border-radius: 20px;
   margin-bottom: 50px;
@@ -133,6 +130,12 @@ h2 {
   height: 30px;
   margin: 2px;
   cursor: help;
+}
+.main-table__titles {
+  background: -webkit-linear-gradient(red, #ffd1d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 .main-table__items {
   margin: 0 -10px;
@@ -208,30 +211,30 @@ h2 {
 
 .top1 {
   background: -webkit-linear-gradient(#ae8419, #ffce6b);
+  font-size: 18px !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 18px !important;
 }
 
 .top2 {
   background: -webkit-linear-gradient(#bababa, #fff);
+  font-size: 18px !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 18px !important;
 }
 
 .top3 {
   background: -webkit-linear-gradient(#9c5221, #fcb48c);
+  font-size: 18px !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 18px !important;
 }
 
 .best-regular {
   background: -webkit-linear-gradient(rgb(137, 7, 224), rgb(221, 182, 248));
+  font-size: 18px !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 18px !important;
 }
 
 .clap {
@@ -259,6 +262,4 @@ h2 {
   color: #fff;
   font-size: 14px;
   text-decoration: none;
-}
-
-/* Responsive *//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

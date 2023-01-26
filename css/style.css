@@ -28,6 +28,7 @@
   width: var(--scrollbarWidth);
 }
 .container::-webkit-scrollbar-track {
+  margin: 100px 0 50px;
   background: var(--scrollbarBgColor);
   border-radius: var(--scrollbarBorderRadius);
 }
@@ -80,6 +81,10 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
 .header {
   position: relative;
   margin-bottom: 50px;
@@ -120,7 +125,6 @@ h2 {
 }
 .main-title {
   font-size: 60px;
-  line-height: 89px;
 }
 .main-table {
   border-radius: 20px;

@@ -50,6 +50,7 @@
 	}
 
 	&::-webkit-scrollbar-track {
+		margin: 100px 0 50px;
 		background: var(--scrollbarBgColor);
 		border-radius: var(--scrollbarBorderRadius);
 	}
@@ -105,6 +106,10 @@ h2 {
 	@include text_transparent
 }
 
+ul {
+	padding-inline-start: 0;
+}
+
 .header {
 	position: relative;
 	margin-bottom: 50px;
@@ -147,7 +152,6 @@ h2 {
 
 	&-title {
 		font-size: 60px;
-		line-height: 89px;
 	}
 
 	&-table {

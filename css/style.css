@@ -58,10 +58,10 @@ a:focus {
 
 html {
   overflow-x: hidden;
-  color: #000;
 }
 
 body {
+  color: #020202;
   height: 100vh;
   overflow-x: hidden;
   display: flex;

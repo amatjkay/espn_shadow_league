@@ -10,9 +10,9 @@
 }
 
 :root {
-  --scrollbarBgColor: rgba(0, 0, 0, .05);
-  --scrollbarThumbColor: rgba(0, 0, 0, .15);
-  --scrollbarThumbColorSecond: rgba(135, 206, 235, .7);
+  --scrollbarBgColor: rgba(0, 0, 0, 0.05);
+  --scrollbarThumbColor: rgba(0, 0, 0, 0.15);
+  --scrollbarThumbColorSecond: rgba(135, 206, 235, 0.7);
   --scrollbarWidth: 14px;
   --scrollbarBorder: 0 solid var(--scrollbarBgColor);
   --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 4);

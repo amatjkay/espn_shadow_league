@@ -107,6 +107,10 @@ ul {
 	padding-inline-start: 0;
 }
 
+.smooth-scroll {
+	transition: transform 0.5s ease-in-out;
+}
+
 .header {
 	position: relative;
 	margin-bottom: 50px;
@@ -153,6 +157,7 @@ ul {
 	}
 
 	&-table {
+		height: 100vh;
 		border-radius: 20px;
 		margin-bottom: 50px;
 

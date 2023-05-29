@@ -1,5 +1,3 @@
-window.__forceSmoothScrollPolyfill__ = true;
-
 document.addEventListener("DOMContentLoaded", function () {
     const anchors = document.querySelectorAll('a[href^="#"]');
     for (let anchor of anchors) {

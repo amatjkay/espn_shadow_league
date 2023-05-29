@@ -81,6 +81,7 @@ a {
 
 html {
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -105,10 +106,6 @@ h2 {
 
 ul {
 	padding-inline-start: 0;
-}
-
-.smooth-scroll {
-	transition: transform 0.5s ease-in-out;
 }
 
 .header {

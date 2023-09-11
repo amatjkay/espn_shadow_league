@@ -1,695 +1,541 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Shadow Hockey League</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" />
-        <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="icon" href="img/favicon/favicon.ico" />
-    </head>
 
-    <header>
-        <div class="header">
-            <div class="header-partners">
-                <a
-                    class="header-partners__item"
-                    title="Домашняя страница"
-                    href="javascript:void(0);"
-                >
-                    <img
-                        src="./img/logo.png"
-                        alt="logo"
-                        class="hockey-league-logo"
-                    />
-                </a>
-                <a
-                    class="header-partners__item"
-                    target="_blank"
-                    href="javascript:void(0);"
-                >
-                    <img
-                        src="./img/logo_nhl.png"
-                        alt="logo nhl"
-                        class="logo-nhl"
-                    />
-                </a>
-                <a
-                    class="header-partners__item"
-                    target="_blank"
-                    href="https://www.espn.com/fantasy/hockey/"
-                >
-                    <img
-                        class="logo-espn"
-                        alt="ESPN logos"
-                        src="https://upload.wikimedia.org/wikipedia/commons/6/60/ESPN_logos.png"
-                    />
-                </a>
-                <a
-                    class="header-partners__item"
-                    target="_blank"
-                    href="https://t.me/sk2k_yt"
-                >
-                    <img src="./img/logo_sk2k.png" alt="SK2K logo" />
-                </a>
-            </div>
-            <nav class="header-tabs">
-                <a href="#tab_01" class="header-tabs__title"
-                    ><span>Доска почёта espn</span></a
-                >
-                <a href="#tab_02" class="header-tabs__title"
-                    ><span>Драфт 1 лиги 23/24 </span>
-                </a>
-                <a href="#tab_03" class="header-tabs__title"
-                    ><span>Драфт 2 лиги 23/24</span></a
-                >
-            </nav>
-            <div class="header-social">
-                <a
-                    class="header-social__link-tg"
-                    href="https://t.me/amaTiiKii"
-                    target="_blank"
-                >
-                    <img
-                        class="telegram"
-                        src="./img/social/telegram.png"
-                        alt="telegram"
-                /></a>
-            </div>
-        </div>
-    </header>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Shadow Hockey League</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="./css/bootstrap-reboot.min.css" />
+	<link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="icon" href="img/favicon/favicon.ico" />
+</head>
 
-    <body>
-        <div class="container">
-            <main class="main">
-                <!-- 1s table start -->
-                <div class="main-table" id="tab_01">
-                    <h2 class="main-title">Доска почёта espn</h2>
-                    <ul class="main-table__items">
-                        <li class="main-table__row main-table__titles">
-                            <span class="main-table__row main-table__row_left">
-                                Участники
-                            </span>
-                            <span class="main-table__row main-table__row_right">
-                                Призы
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left rus top1">
-                                Feel Good
-                            </span>
-                            <span class="main-table__row_right">
-                                <img
-                                    src="./img/cups/top1.svg"
-                                    alt="Shadow SK2K league-1 top1 s22/23"
-                                    title="Shadow SK2K league-1 top1 s22/23"
-                                />
-                                <img
-                                    src="./img/cups/top2.svg"
-                                    alt="Shadow SK2K league-1 top2 s21/22"
-                                    title="Shadow SK2K league-1 top2 s21/22"
-                                />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left bel top2">
-                                Alex Galuza
-                            </span>
-                            <span class="main-table__row_right">
-                                <img
-                                    src="./img/cups/top2.svg"
-                                    alt="Shadow SK2K league-1 top2 s22/23"
-                                    title="Shadow SK2K league-1 top2 s22/23"
-                                />
-                                <img
-                                    src="./img/cups/best-reg.svg"
-                                    alt="Shadow SK2K league-1 Best regular player s22/23"
-                                    title="Shadow SK2K league-1 Best regular player s22/23"
-                                />
-                                <img
-                                    class="clap"
-                                    src="./img/cups/clap.svg"
-                                    alt="Shadow SK2K league-1 Round 1 s21/22"
-                                    title="Shadow SK2K league-1 Round 1 s21/22"
-                                />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left kz top3">
-                                Nurzhan Yessengaliev
-                            </span>
-                            <span class="main-table__row_right">
-                                <img
-                                    src="./img/cups/top3.svg"
-                                    alt="Shadow SK2K league-1 top3 s22/23"
-                                    title="Shadow SK2K league-1 top3 s22/23"
-                                />
-                                <img
-                                    class="clap"
-                                    src="./img/cups/clap.svg"
-                                    alt="Shadow SK2K league-1 Round 1 s21/22"
-                                    title="Shadow SK2K league-1 Round 1 s21/22"
-                                />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left rus top1">
-                                Sumzair San
-                            </span>
-                            <span class="main-table__row_right">
-                                <img
-                                    src="./img/cups/top1.svg"
-                                    alt="Shadow SK2K league-2 top1 s21/22"
-                                    title="Shadow SK2K league-2 top1 s22/23"
-                                />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left rus top2">
-                                AleX TiiKii
-                            </span>
-                            <span class="main-table__row_right">
-                                <img
-                                    src="./img/cups/top2.svg"
-                                    alt="Shadow SK2K league-2 top2 s21/22"
-                                    title="Shadow SK2K league-2 top2 s22/23"
-                                />
-                                <img
-                                    class="clap"
-                                    src="./img/cups/clap.svg"
-                                    alt="Shadow SK2K league Round 1 s21/22"
-                                    title="Shadow SK2K league Round 1 s21/22"
-                                />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left rus top3">
-                                Vlad V, whiplash 92
-                            </span>
-                            <span class="main-table__row_right">
-                                <img
-                                    src="./img/cups/top3.svg"
-                                    alt="Shadow SK2K league-2 top3 s21/22"
-                                    title="Shadow SK2K league-2 top3 s22/23"
-                                />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span
-                                class="main-table__row_left vietnam best-regular"
-                            >
-                                Vladislav Belov
-                            </span>
-                            <span class="main-table__row_right">
-                                <img
-                                    src="./img/cups/best-reg.svg"
-                                    alt="Shadow SK2K league-2 Best regular player s22/23"
-                                    title="Shadow SK2K league-2 Best regular player s22/23"
-                                />
-                                <img
-                                    class="clap"
-                                    src="./img/cups/clap.svg"
-                                    alt="Shadow SK2K league-2 Round 2 s21/22"
-                                    title="Shadow SK2K league-2 Round 2 s22/23"
-                                />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left kz">
-                                Cole CaufieldTeamNePobedim
-                            </span>
-                            <span class="main-table__row_right">
-                                <img
-                                    src="./img/cups/top1.svg"
-                                    alt="Shadow SK2K league-1 top1 s21/22"
-                                    title="Shadow SK2K league-1 top1 s21/22"
-                                />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left rus">
-                                whiplash 92
-                            </span>
-                            <span class="main-table__row_right">
-                                <img
-                                    class="clap"
-                                    src="./img/cups/clap.svg"
-                                    alt="Shadow SK2K league-1 Round 1 s22/23"
-                                    title="Shadow SK2K league-1 Round 1 s22/23"
-                                />
-                                <img
-                                    src="./img/cups/top3.svg"
-                                    alt="Shadow SK2K league top3 s21/22"
-                                    title="Shadow SK2K league top3 s21/22"
-                                />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left rus">
-                                Sousse Sousse
-                            </span>
-                            <span class="main-table__row_right">
-                                <img
-                                    class="clap"
-                                    src="./img/cups/clap.svg"
-                                    alt="Shadow SK2K league-1 Round 2 s22/23"
-                                    title="Shadow SK2K league-1 Round 2 s22/23"
-                                />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left bel">
-                                Sergey Kharlanov
-                            </span>
-                            <span class="main-table__row_right">
-                                <img
-                                    class="clap"
-                                    src="./img/cups/clap.svg"
-                                    alt="Shadow SK2K league-1 Round 1 s22/23"
-                                    title="Shadow SK2K league-1 Round 1 s22/23"
-                                />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left rus">
-                                Евгений Иванов
-                            </span>
-                            <span class="main-table__row_right">
-                                <img
-                                    class="clap"
-                                    src="./img/cups/clap.svg"
-                                    alt="Shadow SK2K league-1 Round 1 s22/23"
-                                    title="Shadow SK2K league-1 Round 1 s22/23"
-                                />
-                                <img
-                                    src="./img/cups/best-reg.svg"
-                                    alt="Shadow SK2K league Best regular player s21/22"
-                                    title="Shadow SK2K league Best regular player s21/22"
-                                />
-                                <img
-                                    class="clap"
-                                    src="./img/cups/clap.svg"
-                                    alt="Shadow SK2K league-1 Round 1 s21/22"
-                                    title="Shadow SK2K league-1 Round 1 s21/22"
-                                />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left ua">
-                                Max Trufanov
-                            </span>
-                            <span class="main-table__row_right">
-                                <img
-                                    class="clap"
-                                    src="./img/cups/clap.svg"
-                                    alt="Shadow SK2K league-1 Round 1 s22/23"
-                                    title="Shadow SK2K league-1 Round 1 s22/23"
-                                />
-                                <img
-                                    class="clap"
-                                    src="./img/cups/clap.svg"
-                                    alt="Shadow SK2K league Round 1 s21/22"
-                                    title="Shadow SK2K league Round 2 s21/22"
-                                />
-                            </span>
-                        </li>
+<header>
+	<div class="header">
+		<div class="header-partners">
+			<a class="header-partners__item" title="Домашняя страница" href="javascript:void(0);">
+				<img src="./img/logo.png" alt="logo" class="hockey-league-logo" />
+			</a>
+			<a class="header-partners__item" target="_blank" href="javascript:void(0);">
+				<img src="./img/logo_nhl.png" alt="logo nhl" class="logo-nhl" />
+			</a>
+			<a class="header-partners__item" target="_blank" href="https://www.espn.com/fantasy/hockey/">
+				<img class="logo-espn" alt="ESPN logos"
+					src="https://upload.wikimedia.org/wikipedia/commons/6/60/ESPN_logos.png" />
+			</a>
+			<a class="header-partners__item" target="_blank" href="https://t.me/sk2k_yt">
+				<img src="./img/logo_sk2k.png" alt="SK2K logo" />
+			</a>
+		</div>
+		<nav class="header-tabs">
+			<a href="#tab_01" class="header-tabs__title"><span>Доска почёта espn</span></a>
+			<a href="#tab_02" class="header-tabs__title"><span>Драфт 1 лиги 23/24 </span>
+			</a>
+			<a href="#tab_03" class="header-tabs__title"><span>Драфт 2 лиги 23/24</span></a>
+		</nav>
+		<div class="header-social">
+			<a class="header-social__link-tg" href="https://t.me/amaTiiKii" target="_blank">
+				<img class="telegram" src="./img/social/telegram.png" alt="telegram" /></a>
+		</div>
+	</div>
+</header>
 
-                        <li class="main-table__row">
-                            <span class="main-table__row_left ua">
-                                Denis Sanzharevskyi
-                            </span>
-                            <span class="main-table__row_right">
-                                <img
-                                    class="clap"
-                                    src="./img/cups/clap.svg"
-                                    alt="Shadow SK2K league Round 1 s21/22"
-                                    title="Shadow SK2K league Round 1 s21/22"
-                                />
-                            </span>
-                        </li>
+<body>
+	<div class="container">
+		<main class="main">
+			<!-- 1s table start -->
+			<div class="main-table" id="tab_01">
+				<h2 class="main-title">Доска почёта espn</h2>
+				<ul class="main-table__items">
+					<li class="main-table__row main-table__titles">
+						<span class="main-table__row main-table__row_left">
+							Участники
+						</span>
+						<span class="main-table__row main-table__row_right">
+							Призы
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left rus top1">
+							Feel Good
+						</span>
+						<span class="main-table__row_right">
+							<img src="./img/cups/top1.svg" alt="Shadow SK2K league-1 top1 s22/23"
+								title="Shadow SK2K league-1 top1 s22/23" />
+							<img src="./img/cups/top2.svg" alt="Shadow SK2K league-1 top2 s21/22"
+								title="Shadow SK2K league-1 top2 s21/22" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left bel top2">
+							Alex Galuza
+						</span>
+						<span class="main-table__row_right">
+							<img src="./img/cups/top2.svg" alt="Shadow SK2K league-1 top2 s22/23"
+								title="Shadow SK2K league-1 top2 s22/23" />
+							<img src="./img/cups/best-reg.svg" alt="Shadow SK2K league-1 Best regular player s22/23"
+								title="Shadow SK2K league-1 Best regular player s22/23" />
+							<img class="clap" src="./img/cups/clap.svg" alt="Shadow SK2K league-1 Round 1 s21/22"
+								title="Shadow SK2K league-1 Round 1 s21/22" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left kz top3">
+							Nurzhan Yessengaliev
+						</span>
+						<span class="main-table__row_right">
+							<img src="./img/cups/top3.svg" alt="Shadow SK2K league-1 top3 s22/23"
+								title="Shadow SK2K league-1 top3 s22/23" />
+							<img class="clap" src="./img/cups/clap.svg" alt="Shadow SK2K league-1 Round 1 s21/22"
+								title="Shadow SK2K league-1 Round 1 s21/22" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left rus top1">
+							Sumzair San
+						</span>
+						<span class="main-table__row_right">
+							<img src="./img/cups/top1.svg" alt="Shadow SK2K league-2 top1 s21/22"
+								title="Shadow SK2K league-2 top1 s22/23" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left rus top2">
+							AleX TiiKii
+						</span>
+						<span class="main-table__row_right">
+							<img src="./img/cups/top2.svg" alt="Shadow SK2K league-2 top2 s21/22"
+								title="Shadow SK2K league-2 top2 s22/23" />
+							<img class="clap" src="./img/cups/clap.svg" alt="Shadow SK2K league Round 1 s21/22"
+								title="Shadow SK2K league Round 1 s21/22" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left rus top3">
+							Vlad V, whiplash 92
+						</span>
+						<span class="main-table__row_right">
+							<img src="./img/cups/top3.svg" alt="Shadow SK2K league-2 top3 s21/22"
+								title="Shadow SK2K league-2 top3 s22/23" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left vietnam best-regular">
+							Vladislav Belov
+						</span>
+						<span class="main-table__row_right">
+							<img src="./img/cups/best-reg.svg" alt="Shadow SK2K league-2 Best regular player s22/23"
+								title="Shadow SK2K league-2 Best regular player s22/23" />
+							<img class="clap" src="./img/cups/clap.svg" alt="Shadow SK2K league-2 Round 2 s21/22"
+								title="Shadow SK2K league-2 Round 2 s22/23" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left kz">
+							Cole CaufieldTeamNePobedim
+						</span>
+						<span class="main-table__row_right">
+							<img src="./img/cups/top1.svg" alt="Shadow SK2K league-1 top1 s21/22"
+								title="Shadow SK2K league-1 top1 s21/22" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left rus">
+							whiplash 92
+						</span>
+						<span class="main-table__row_right">
+							<img class="clap" src="./img/cups/clap.svg" alt="Shadow SK2K league-1 Round 1 s22/23"
+								title="Shadow SK2K league-1 Round 1 s22/23" />
+							<img src="./img/cups/top3.svg" alt="Shadow SK2K league top3 s21/22"
+								title="Shadow SK2K league top3 s21/22" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left rus">
+							Sousse Sousse
+						</span>
+						<span class="main-table__row_right">
+							<img class="clap" src="./img/cups/clap.svg" alt="Shadow SK2K league-1 Round 2 s22/23"
+								title="Shadow SK2K league-1 Round 2 s22/23" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left bel">
+							Sergey Kharlanov
+						</span>
+						<span class="main-table__row_right">
+							<img class="clap" src="./img/cups/clap.svg" alt="Shadow SK2K league-1 Round 1 s22/23"
+								title="Shadow SK2K league-1 Round 1 s22/23" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left rus">
+							Евгений Иванов
+						</span>
+						<span class="main-table__row_right">
+							<img class="clap" src="./img/cups/clap.svg" alt="Shadow SK2K league-1 Round 1 s22/23"
+								title="Shadow SK2K league-1 Round 1 s22/23" />
+							<img src="./img/cups/best-reg.svg" alt="Shadow SK2K league Best regular player s21/22"
+								title="Shadow SK2K league Best regular player s21/22" />
+							<img class="clap" src="./img/cups/clap.svg" alt="Shadow SK2K league-1 Round 1 s21/22"
+								title="Shadow SK2K league-1 Round 1 s21/22" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left ua">
+							Max Trufanov
+						</span>
+						<span class="main-table__row_right">
+							<img class="clap" src="./img/cups/clap.svg" alt="Shadow SK2K league-1 Round 1 s22/23"
+								title="Shadow SK2K league-1 Round 1 s22/23" />
+							<img class="clap" src="./img/cups/clap.svg" alt="Shadow SK2K league Round 1 s21/22"
+								title="Shadow SK2K league Round 2 s21/22" />
+						</span>
+					</li>
 
-                        <li class="main-table__row">
-                            <span class="main-table__row_left rus">
-                                Евгений Медведев
-                            </span>
-                            <span class="main-table__row_right">
-                                <img src="" title="" />
-                            </span>
-                        </li>
+					<li class="main-table__row">
+						<span class="main-table__row_left ua">
+							Denis Sanzharevskyi
+						</span>
+						<span class="main-table__row_right">
+							<img class="clap" src="./img/cups/clap.svg" alt="Shadow SK2K league Round 1 s21/22"
+								title="Shadow SK2K league Round 1 s21/22" />
+						</span>
+					</li>
 
-                        <li class="main-table__row">
-                            <span class="main-table__row_left rus">
-                                Павел Роевнев
-                            </span>
-                            <span class="main-table__row_right">
-                                <img src="" title="" />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span
-                                title="Speedy Gonzales"
-                                class="main-table__row_left mexico"
-                            >
-                                Igor Kadzayev
-                            </span>
-                            <span class="main-table__row_right">
-                                <img src="" title="" />
-                            </span>
-                        </li>
+					<li class="main-table__row">
+						<span class="main-table__row_left rus">
+							Евгений Медведев
+						</span>
+						<span class="main-table__row_right">
+							<img src="" title="" />
+						</span>
+					</li>
 
-                        <li class="main-table__row">
-                            <span class="main-table__row_left ua">
-                                Oleg Karandashov
-                            </span>
-                            <span class="main-table__row_right">
-                                <img src="" title="" />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left rus">
-                                Vlad V
-                            </span>
-                            <span class="main-table__row_right">
-                                <img src="" title="" />
-                            </span>
-                        </li>
+					<li class="main-table__row">
+						<span class="main-table__row_left rus">
+							Павел Роевнев
+						</span>
+						<span class="main-table__row_right">
+							<img src="" title="" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span title="Speedy Gonzales" class="main-table__row_left mexico">
+							Igor Kadzayev
+						</span>
+						<span class="main-table__row_right">
+							<img src="" title="" />
+						</span>
+					</li>
 
-                        <li class="main-table__row">
-                            <span class="main-table__row_left rus">
-                                Don Georgio
-                            </span>
-                            <span class="main-table__row_right">
-                                <img src="" title="" />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left pol">
-                                Andrii Korniichuk
-                            </span>
-                            <span class="main-table__row_right">
-                                <img src="" title="" />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left bel">
-                                El Guerrero
-                            </span>
-                            <span class="main-table__row_right">
-                                <img src="" title="" />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left rus">
-                                Dima ATC
-                            </span>
-                            <span class="main-table__row_right">
-                                <img src="" title="" />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left rus">
-                                Alex Rybakov
-                            </span>
-                            <span class="main-table__row_right">
-                                <img src="" title="" />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left rus">
-                                Femida Femida
-                            </span>
-                            <span class="main-table__row_right">
-                                <img src="" title="" />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left rus">
-                                Maxim Shvetsov, Sergey Dorokhov
-                            </span>
-                            <span class="main-table__row_right">
-                                <img src="" title="" />
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left bel">
-                                Сергей Стрельченко
-                            </span>
-                            <span class="main-table__row_right">
-                                <img src="" title="" />
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <!-- 1s table end -->
+					<li class="main-table__row">
+						<span class="main-table__row_left ua">
+							Oleg Karandashov
+						</span>
+						<span class="main-table__row_right">
+							<img src="" title="" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left rus">
+							Vlad V
+						</span>
+						<span class="main-table__row_right">
+							<img src="" title="" />
+						</span>
+					</li>
 
-                <!-- 2nd table start -->
-                <div class="main-table" id="tab_02">
-                    <h2 class="main-title">Драфт 1 лиги 23/24</h2>
-                    <ul class="main-table__items">
-                        <li class="main-table__row main-table__titles">
-                            <span class="main-table__row_left titles">
-                                Участники
-                            </span>
-                            <span class="main-table__row_right titles">
-                                Порядок пиков
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Oleg Karandashov
-                            </span>
-                            <span class="main-table__row_right"> 1 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Павел Роевнев
-                            </span>
-                            <span class="main-table__row_right"> 2 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                AleX TiiKii
-                            </span>
-                            <span class="main-table__row_right"> 3 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Denis Sanzharevskyi
-                            </span>
-                            <span class="main-table__row_right"> 4 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Igor Kadzayev
-                            </span>
-                            <span class="main-table__row_right"> 5 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Евгений Медведев
-                            </span>
-                            <span class="main-table__row_right"> 6 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Cole CaufieldTeamNePobedim</span
-                            >
-                            <span class="main-table__row_right"> 7 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Vladislav Belov</span
-                            >
-                            <span class="main-table__row_right"> 8 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                whiplash 92</span
-                            >
-                            <span class="main-table__row_right"> 9 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Slava's Team (новый участник, вместо Piter
-                                Predators)</span
-                            >
-                            <span class="main-table__row_right"> 10 </span>
-                        </li>
+					<li class="main-table__row">
+						<span class="main-table__row_left rus">
+							Don Georgio
+						</span>
+						<span class="main-table__row_right">
+							<img src="" title="" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left pol">
+							Andrii Korniichuk
+						</span>
+						<span class="main-table__row_right">
+							<img src="" title="" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left bel">
+							El Guerrero
+						</span>
+						<span class="main-table__row_right">
+							<img src="" title="" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left rus">
+							Dima ATC
+						</span>
+						<span class="main-table__row_right">
+							<img src="" title="" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left rus">
+							Alex Rybakov
+						</span>
+						<span class="main-table__row_right">
+							<img src="" title="" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left rus">
+							Femida Femida
+						</span>
+						<span class="main-table__row_right">
+							<img src="" title="" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left rus">
+							Maxim Shvetsov, Sergey Dorokhov
+						</span>
+						<span class="main-table__row_right">
+							<img src="" title="" />
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left bel">
+							Сергей Стрельченко
+						</span>
+						<span class="main-table__row_right">
+							<img src="" title="" />
+						</span>
+					</li>
+				</ul>
+			</div>
+			<!-- 1s table end -->
 
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Sergey Kharlanov</span
-                            >
-                            <span class="main-table__row_right"> 11 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span
-                                title="Speedy Gonzales"
-                                class="main-table__row_left"
-                            >
-                                Max Trufanov</span
-                            >
-                            <span class="main-table__row_right"> 12 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Sousse Sousse</span
-                            >
-                            <span class="main-table__row_right"> 13 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Nurzhan Yessengaliev</span
-                            >
-                            <span class="main-table__row_right"> 14 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Alex Galuza</span
-                            >
-                            <span class="main-table__row_right"> 15 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left"> Feel Good</span>
-                            <span class="main-table__row_right"> 16 </span>
-                        </li>
-                    </ul>
-                </div>
-                <!-- 2nd table end -->
+			<!-- 2nd table start -->
+			<div class="main-table" id="tab_02">
+				<h2 class="main-title">Драфт 1 лиги 23/24</h2>
+				<ul class="main-table__items">
+					<li class="main-table__row main-table__titles">
+						<span class="main-table__row_left titles">
+							Участники
+						</span>
+						<span class="main-table__row_right titles">
+							Порядок пиков
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Oleg Karandashov
+						</span>
+						<span class="main-table__row_right"> 1 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Павел Роевнев
+						</span>
+						<span class="main-table__row_right"> 2 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							AleX TiiKii
+						</span>
+						<span class="main-table__row_right"> 3 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Denis Sanzharevskyi
+						</span>
+						<span class="main-table__row_right"> 4 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Igor Kadzayev
+						</span>
+						<span class="main-table__row_right"> 5 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Евгений Медведев
+						</span>
+						<span class="main-table__row_right"> 6 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Cole CaufieldTeamNePobedim</span>
+						<span class="main-table__row_right"> 7 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left"> Team El</span>
+						<span class="main-table__row_right"> 8 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							whiplash 92</span>
+						<span class="main-table__row_right"> 9 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Slava's Team (новый участник, вместо Piter
+							Predators)</span>
+						<span class="main-table__row_right"> 10 </span>
+					</li>
 
-                <!-- 3th table start -->
-                <div class="main-table" id="tab_03">
-                    <h2 class="main-title">Драфт 2 лиги 23/24</h2>
-                    <ul class="main-table__items">
-                        <li class="main-table__row main-table__titles">
-                            <span class="main-table__row_left titles">
-                                Участники
-                            </span>
-                            <span class="main-table__row_right titles">
-                                Порядок пиков
-                            </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Сергей Стрельченко
-                            </span>
-                            <span class="main-table__row_right"> 1 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Don Georgio
-                            </span>
-                            <span class="main-table__row_right"> 2 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                El Guerrero
-                            </span>
-                            <span class="main-table__row_right"> 3 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Alex Rybakov
-                            </span>
-                            <span class="main-table__row_right"> 4 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Maxim Shvetsov, Sergey Dorokhov
-                            </span>
-                            <span class="main-table__row_right"> 5 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left"> Dima ATC </span>
-                            <span class="main-table__row_right"> 6 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                Femida Femida</span
-                            >
-                            <span class="main-table__row_right"> 7 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                any player
-                            </span>
-                            <span class="main-table__row_right"> 8 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                any player
-                            </span>
-                            <span class="main-table__row_right"> 9 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                any player
-                            </span>
-                            <span class="main-table__row_right"> 10 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                any player
-                            </span>
-                            <span class="main-table__row_right"> 11 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span
-                                title="Speedy Gonzales"
-                                class="main-table__row_left"
-                            >
-                                any player
-                            </span>
-                            <span class="main-table__row_right"> 12 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                any player
-                            </span>
-                            <span class="main-table__row_right"> 13 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                any player
-                            </span>
-                            <span class="main-table__row_right"> 14 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                any player
-                            </span>
-                            <span class="main-table__row_right"> 15 </span>
-                        </li>
-                        <li class="main-table__row">
-                            <span class="main-table__row_left">
-                                any player
-                            </span>
-                            <span class="main-table__row_right"> 16 </span>
-                        </li>
-                    </ul>
-                </div>
-                <!-- 3th table end -->
-            </main>
-        </div>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Sergey Kharlanov</span>
+						<span class="main-table__row_right"> 11 </span>
+					</li>
+					<li class="main-table__row">
+						<span title="Speedy Gonzales" class="main-table__row_left">
+							Max Trufanov</span>
+						<span class="main-table__row_right"> 12 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Sousse Sousse</span>
+						<span class="main-table__row_right"> 13 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Nurzhan Yessengaliev</span>
+						<span class="main-table__row_right"> 14 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Alex Galuza</span>
+						<span class="main-table__row_right"> 15 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left"> Feel Good</span>
+						<span class="main-table__row_right"> 16 </span>
+					</li>
+				</ul>
+			</div>
+			<!-- 2nd table end -->
 
-        <footer class="footer">
-            <span class="copymain-table__row_right"
-                >© Espn Shadow League - Создано в 2020 году
-                <a target="_blank" href="https://t.me/amaTiiKii">@Алексеем</a> и
-                <a target="_blank" href="https://t.me/whiplash92"
-                    >@Константином</a
-                ></span
-            >
-        </footer>
+			<!-- 3th table start -->
+			<div class="main-table" id="tab_03">
+				<h2 class="main-title">Драфт 2 лиги 23/24</h2>
+				<ul class="main-table__items">
+					<li class="main-table__row main-table__titles">
+						<span class="main-table__row_left titles">
+							Участники
+						</span>
+						<span class="main-table__row_right titles">
+							Порядок пиков
+						</span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Сергей Стрельченко
+						</span>
+						<span class="main-table__row_right"> 1 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Volga Mafiozi
+						</span>
+						<span class="main-table__row_right"> 2 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							San Francisco
+						</span>
+						<span class="main-table__row_right"> 3 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left"> EKB NVSB </span>
+						<span class="main-table__row_right"> 4 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							The Мир Dima ATC
+						</span>
+						<span class="main-table__row_right"> 5 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Team Femida
+						</span>
+						<span class="main-table__row_right"> 6 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left"> Team92</span>
+						<span class="main-table__row_right"> 7 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left"> Zhanik </span>
+						<span class="main-table__row_right"> 8 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Galuza Friend
+						</span>
+						<span class="main-table__row_right"> 9 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Юрий с клюшки
+						</span>
+						<span class="main-table__row_right"> 10 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Kazakh camry
+						</span>
+						<span class="main-table__row_right"> 11 </span>
+					</li>
+					<li class="main-table__row">
+						<span title="Speedy Gonzales" class="main-table__row_left">
+							Max с клюшки
+						</span>
+						<span class="main-table__row_right"> 12 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							Дмитрий с клюшки
+						</span>
+						<span class="main-table__row_right"> 13 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							any player
+						</span>
+						<span class="main-table__row_right"> 14 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							any player
+						</span>
+						<span class="main-table__row_right"> 15 </span>
+					</li>
+					<li class="main-table__row">
+						<span class="main-table__row_left">
+							any player
+						</span>
+						<span class="main-table__row_right"> 16 </span>
+					</li>
+				</ul>
+			</div>
+			<!-- 3th table end -->
+		</main>
+	</div>
 
-        <script src="./js/menu.js"></script>
-    </body>
+	<footer class="footer">
+		<span class="copymain-table__row_right">© Espn Shadow League - Создано в 2020 году
+			<a target="_blank" href="https://t.me/amaTiiKii">@Алексеем</a> и
+			<a target="_blank" href="https://t.me/whiplash92">@Константином</a></span>
+	</footer>
+
+	<script src="./js/menu.js"></script>
+</body>
+
 </html>

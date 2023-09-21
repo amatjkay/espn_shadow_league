@@ -137,6 +137,7 @@ ul {
 		align-items: center;
 
 		&__title {
+			font-size: 17px;
 			padding: 0 30px;
 			@include red_text;
 			@include font_size_for_top_players;

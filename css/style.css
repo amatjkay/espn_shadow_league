@@ -113,6 +113,7 @@ ul {
   align-items: center;
 }
 .header-tabs__title {
+  font-size: 17px;
   padding: 0 30px;
   background: -webkit-linear-gradient(red, #ffd1d1);
   -webkit-background-clip: text;

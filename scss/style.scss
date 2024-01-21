@@ -3,8 +3,8 @@
 	-webkit-text-fill-color: transparent;
 }
 
-@mixin red_text {
-	background: -webkit-linear-gradient(red, #ffd1d1);
+@mixin gray_text {
+	background: -webkit-linear-gradient(#092350, #cfe1eb);
 	@include text_transparent;
 }
 
@@ -134,7 +134,7 @@ ul {
 		&__title {
 			font-size: 17px;
 			padding: 0 30px;
-			@include red_text;
+			@include gray_text;
 			@include font_size_for_top_players;
 		}
 	}
@@ -163,7 +163,7 @@ ul {
 		}
 
 		&__titles {
-			@include red_text;
+			color: #092350;
 			font-weight: bold;
 		}
 

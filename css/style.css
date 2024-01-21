@@ -110,7 +110,7 @@ ul {
 .header-tabs__title {
   font-size: 17px;
   padding: 0 30px;
-  background: -webkit-linear-gradient(red, #ffd1d1);
+  background: -webkit-linear-gradient(#092350, #cfe1eb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 18px !important;
@@ -137,9 +137,7 @@ ul {
   cursor: help;
 }
 .main-table__titles {
-  background: -webkit-linear-gradient(red, #ffd1d1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #092350;
   font-weight: bold;
 }
 .main-table__items {

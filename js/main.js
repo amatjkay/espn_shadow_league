@@ -168,6 +168,3 @@ let managers = [
         country: countries[0],
     },
 ];
-
-console.log(managers);
-console.log(achievements);

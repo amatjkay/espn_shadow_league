@@ -78,7 +78,8 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
-ul {
+ul,
+ol {
   padding-inline-start: 0;
 }
 

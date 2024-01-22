@@ -100,7 +100,8 @@ h2 {
 	@include text_transparent;
 }
 
-ul {
+ul,
+ol {
 	padding-inline-start: 0;
 }
 

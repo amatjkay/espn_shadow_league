@@ -37,7 +37,7 @@
 a {
   text-decoration: none;
   outline: none;
-  transition: 0.7 all;
+  transition: 0.5 all;
 }
 a:hover {
   background: -webkit-linear-gradient(#ffd1d1, #00a6ff);
@@ -90,6 +90,7 @@ ul {
   min-height: 60px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), transparent);
 }
 .header-social {

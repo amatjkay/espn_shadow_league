@@ -10,6 +10,10 @@ let countries = [
     "Poland",
 ];
 
+for (let i = 0; i < countries.length; i++) {
+    console.log(countries[i]);
+}
+
 let achievements = [
     {
         top1: `Shadow ${leagues[0]} league TOP1`,
